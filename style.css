@@ -6,7 +6,6 @@
 }
 
 body {
-  display: flex;
   font-family: "Roboto", sans-serif;
 }
 
@@ -104,12 +103,14 @@ i {
   position: absolute;
   height: 65px;
   width: 100%;
-  background-color: #838383;
+  background-color: #5d5c5c;
   bottom: 20%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  color: #fff;
   align-items: center;
+  font-weight: 400;
 }
 
 .search-container i {
@@ -117,11 +118,65 @@ i {
 }
 
 .search-container input {
-  background-color: transparent;
   border: none;
-  width: 500px;
+  background-color: transparent;
   margin-left: 10px;
   font-size: medium;
-  color: #cfcece;
+  color: #817f7f;
   outline: none;
+  font-weight: 600;
+  width: auto;
+}
+
+.search-container input::placeholder {
+  color: #817f7f;
+  font-weight: 600;
+}
+
+.search-entry {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.appointment {
+  padding-right: 2rem;
+}
+section {
+  margin-bottom: 5rem;
+}
+
+.intro__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro-card img {
+  height: 250px;
+  width: 250px;
+}
+
+.intro-card span {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.intro-card p {
+  font-size: medium;
+  font-weight: 400;
+}
+
+.intro__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
